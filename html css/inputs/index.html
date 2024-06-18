@@ -6,7 +6,9 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- date -->
     <div class="">
+      
       <label for="national_id" class="form-label"> Date input*</label>
       <br />
       <input
@@ -18,16 +20,21 @@
         class="form-control"
       />
     </div>
-    <br>
+    <br />
+    <!-- read only -->
     <div>
       <label for="national_id" class="form-label"> Read Only*</label>
       <br />
-      <input
-        dir="ltr"
-        type="text"
-        readonly    
-        value="read"
-      />
+      <input dir="ltr" type="text" readonly value="read" />
+    </div>
+    <br>
+    <!-- disabled -->
+    <div>
+      <label for="national_id" class="form-label">
+        disabled Only*(will not send data to server)</label
+      >
+      <br />
+      <input dir="ltr" type="text" disabled value="read" />
     </div>
   </body>
 </html>
