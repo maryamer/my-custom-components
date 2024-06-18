@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .type-item{
+            margin-top: 5px;
+        }
+      input[type="radio"] {
+        display: none;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-right: 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: 100;
+      }
+
+      label > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+        background: #1a202c;
+        border-radius: 50%;
+        padding: 2px;
+      }
+      label > span > span {
+        display: none;
+        width: 12px;
+        height: 12px;
+        background: white;
+        border-radius: 50%;
+      }
+
+      input[type="radio"]:checked ~ label > span {
+        background: #667eea;
+      }
+      input[type="radio"]:checked ~ label > span > span {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="location-types" style="background-color: gray;">
+      <p>Property Type</p>
+
+      <div class="type-item">
+        <input type="radio" id="home" name="radio-group" />
+        <label for="home"
+          ><span><span></span></span> House</label
+        >
+      </div>
+      <div class="type-item">
+        <input type="radio" id="apartment" name="radio-group" />
+        <label for="apartment"
+          ><span><span></span></span>Apartment</label
+        >
+      </div>
+      <div class="type-item">
+        <input type="radio" id="loft" name="radio-group" />
+        <label for="loft"
+          ><span><span></span></span>Loft</label
+        >
+      </div>
+      <div class="type-item">
+        <input type="radio" id="townhouse" name="radio-group" />
+        <label for="townhouse"
+          ><span><span></span></span>TownHouse</label
+        >
+      </div>
+    </div>
+  </body>
+</html>
